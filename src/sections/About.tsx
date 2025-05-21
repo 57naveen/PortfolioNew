@@ -10,13 +10,71 @@ import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
+import nodejs from "@/assets/icons/nodejs-icon.svg";
+import expressjs from "@/assets/icons/expressjs-icon.svg";
+import redux from "@/assets/icons/redux-svgrepo-com.svg";
+import mongodb from "@/assets/icons/mongodb-svgrepo-com.svg";
+import postman from "@/assets/icons/postman-svgrepo-com.svg";
+import aws from "@/assets/icons/aws-svgrepo-com (1).svg";
+import firebase from "@/assets/icons/firebase-svgrepo-com.svg";
+import tailwind from "@/assets/icons/tailwind-css-svgrepo-com.svg";
+import StarIcon from '@/assets/icons/star.svg'
 
 import mapIamge from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolBoxItems from "@/components/ToolBoxItems";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 import { useRef } from "react";
+import TechWishlistScrollUp from "@/components/TechWishlistScrollUp";
+
+import {
+  SiJavascript,
+  SiLangchain,
+  SiAmazon,
+  SiOpenai,
+  SiTensorflow,
+  SiGithubactions,
+  SiPostman,
+  SiApacheairflow,
+} from "react-icons/si";
+import { FaBrain, FaServer, FaRobot, FaCode,FaAws  } from "react-icons/fa";
+import { LiaRobotSolid } from "react-icons/lia";
+
+const TechWishlist = [
+  {
+    title: "LangChain",
+    iconType: SiLangchain,
+  },
+  {
+    title: "LLM Agentic Workflows",
+    iconType: FaRobot,
+  },
+  {
+    title: "Automation Pipelines",
+    iconType: SiGithubactions,
+  },
+  {
+    title: "RAG",
+    iconType: LiaRobotSolid,
+  },
+  {
+    title: "MCP Server",
+    iconType: FaServer,
+  },
+  {
+    title: "Prompt Engineering",
+    iconType: FaCode,
+  },
+  {
+    title: "Multimodal AI",
+    iconType: FaBrain,
+  },
+  {
+    title: "AWS AI Services",
+    iconType: FaAws,
+  },
+];
 
 const toolboxItems = [
   {
@@ -43,12 +101,44 @@ const toolboxItems = [
     title: "Github",
     iconType: GithubIcon,
   },
+  {
+    title: "nodejs",
+    iconType: nodejs,
+  },
+  {
+    title: "expressjs",
+    iconType: expressjs,
+  },
+  {
+    title: "Redux",
+    iconType: redux,
+  },
+  {
+    title: "MongoDb",
+    iconType: mongodb,
+  },
+  {
+    title: "Postman",
+    iconType: postman,
+  },
+  {
+    title: "aws",
+    iconType: aws,
+  },
+  {
+    title: "firebase",
+    iconType: firebase,
+  },
+  {
+    title: "tailwind",
+    iconType: tailwind,
+  },
 ];
 
 const hobbies = [
   {
-    title: "Painting",
-    emoji: "🎨",
+    title: "Coding",
+    emoji: "💻",
     left: "5%",
     top: "5%",
   },
@@ -91,7 +181,6 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
-
   const constraintRef = useRef(null);
   return (
     <div className="py-20 lg:py-28">
@@ -103,14 +192,21 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1  md:grid-cols-5 md:gap-8 lg:grid-cols-3">
+            {/* Tech Wishlist Card */}
             <Card className="h-[320px] col-span-2 mb-8 lg:col-span-1">
-              <CardHeader
-                title="My Reads"
-                description="Explore the books shaping my perspectives."
-              />
-              <div className="w-40 mx-auto mt-2 md:mt-0 lg:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+              <div>
+              <div className="inline-flex  items-center gap-1">
+          <StarIcon className='size-9 text-emerald-300  ' />
+          <h3 className="font-serif text-3xl">Tech Wishlist</h3>
+           </div>
+          <p className="text-sm text-white/60 mt-2 mb-2  ml-8 ">What’s next on my radar.</p>
               </div>
+  
+
+              <TechWishlistScrollUp
+                items={TechWishlist}
+                className=""
+              />
             </Card>
 
             <Card className="h-[320px] col-span-3 lg:col-span-2 ">
@@ -126,7 +222,7 @@ export const AboutSection = () => {
               />
               <ToolBoxItems
                 items={toolboxItems}
-                className="mt-6 "
+                className="mt-5 mb-3 "
                 itemsWrapperClassName="animate-move-right [animation-duration:15s]"
               />
             </Card>
