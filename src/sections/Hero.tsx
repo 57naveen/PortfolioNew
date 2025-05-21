@@ -5,6 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import avatar from "@/assets/images/avatar.png";
 
 export const HeroSection = () => {
   return (
@@ -27,7 +28,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <SparkleIcon className="size-8 text-emerald-300/20" />
+          {/* <SparkleIcon className="size-8 text-sky-400" /> */}
+          <StarIcon className="size-8 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit
@@ -38,7 +41,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <SparkleIcon className="size-5 text-emerald-300/20" />
+          {/* <SparkleIcon className="size-5 text-sky-400" /> */}
+          <StarIcon className="size-5 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
@@ -53,7 +58,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <SparkleIcon className="size-10 text-emerald-300/20" />
+          {/* <SparkleIcon className="size-10 text-sky-300" /> */}
+          <StarIcon className="size-10 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit
@@ -64,7 +71,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <SparkleIcon className="size-10 text-emerald-300/20" />
+          {/* <SparkleIcon className="size-10 text-sky-300" /> */}
+          <StarIcon className="size-10 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit
@@ -75,7 +84,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <StarIcon className="size-12 text-emerald-300" />
+          {/* <StarIcon className="size-12 text-sky-300" /> */}
+          <StarIcon className="size-12 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit
@@ -86,7 +97,9 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <StarIcon className="size-8 text-emerald-300" />
+          {/* <StarIcon className="size-8 text-sky-300" /> */}
+          <StarIcon className="size-8 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
         </HeroOrbit>
 
         <HeroOrbit size={620} rotation={-5} shouldOrbit orbitDuration="44s">
@@ -101,7 +114,8 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <SparkleIcon className="size-14 text-emerald-300/20" />
+          {/* <SparkleIcon className="size-14 text-sky-300" /> */}
+          <StarIcon className="size-14 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
         </HeroOrbit>
 
         <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration="48s">
@@ -116,16 +130,20 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <StarIcon className="size-28 text-emerald-300" />
+      {/* <StarIcon className="size-28 text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]" /> */}
+      <StarIcon className="size-28 text-emerald-400 drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+
+
         </HeroOrbit>
       </div>
 
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
-            src={memojiImage}
+            src={avatar}
             className="size-[100px]"
             alt="Person Peeking from behind laptop"
+           
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex  items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
