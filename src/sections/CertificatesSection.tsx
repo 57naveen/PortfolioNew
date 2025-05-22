@@ -45,8 +45,8 @@ export const CertificatesSection = () => {
     <div className="container">
       <SectionHeader
         eyebrow="Certifications"
-        title="What I've Earned Along the Way"
-        description="Here are some certifications I’ve earned to strengthen my skills and stay updated."
+        title="What I&apos;ve Earned Along the Way"
+        description="Here are some certifications I&apos;ve earned to strengthen my skills and stay updated."
       />
       <div className="mt-12 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] py-4 -my-4">
         <div className="flex gap-8 flex-none animate-move-left [animation-duration:60s] hover:[animation-play-state:paused]">

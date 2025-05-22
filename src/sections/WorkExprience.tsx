@@ -8,7 +8,7 @@ export const WorkExperience = () => {
         <SectionHeader
           eyebrow="Career Journey"
           title="My Work Experience"
-          description="Here's my professional journey and contributions."
+          description="Here&apos;s my professional journey and contributions."
         />
 
         <div className="mt-12 space-y-8">

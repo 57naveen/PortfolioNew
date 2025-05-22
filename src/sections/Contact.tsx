@@ -67,10 +67,10 @@ export const ContactSection = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center md:gap-16">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl">
-                Let's create something amazing together
+                Let&apos;s create something amazing together
               </h2>
               <p className="text-sm mt-2 md:text-base">
-                Ready to bring your next project to life? Let's connect and
+                Ready to bring your next project to life? Let&apos;s connect and
                 discuss how I can help you achieve your goals.
               </p>
             </div>
@@ -116,7 +116,7 @@ export const ContactSection = () => {
                   </svg>
                 </button>
 
-                <h3 className="text-xl font-semibold mb-4">Let's Talk</h3>
+                <h3 className="text-xl font-semibold mb-4">Let&apos;s Talk</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium">

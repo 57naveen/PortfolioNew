@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "Daniel White",
     position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Alex&apos;s ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
     avatar: memojiAvatar3,
   },
   {
