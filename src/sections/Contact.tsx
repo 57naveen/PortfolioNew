@@ -170,7 +170,7 @@ export const ContactSection = () => {
                     <button
                       type="submit"
                       disabled={isSending}
-                      className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-md transition disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="bg-emerald-500 hover:bg-emerald-600 text-white sm:mr-9 px-6 py-2 rounded-md transition disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSending ? "Sending..." : "Send Message"}
                     </button>
