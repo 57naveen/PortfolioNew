@@ -3,6 +3,8 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+export const dynamic = 'force-dynamic'; 
+
 export async function POST(req: Request) {
   const { name, email, description } = await req.json();
 
@@ -14,12 +16,12 @@ export async function POST(req: Request) {
     },
   });
 
-  const mailOptions = {
-    from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_USER,
-    subject: `New contact from ${name}`,
-    text: `Name: ${name}\nEmail: ${email}\nMessage:\n${description}`,
-  };
+ const mailOptions = {
+  from: process.env.GMAIL_USER,
+  to: process.env.GMAIL_USER,
+  subject: `New contact from ${name}`,           // backticks needed here
+  text: `Name: ${name}\nEmail: ${email}\nMessage:\n${description}`,  // backticks here too
+};
 
   try {
     await transporter.sendMail(mailOptions);
