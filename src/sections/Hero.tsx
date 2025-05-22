@@ -172,7 +172,7 @@ export const HeroSection = () => {
           </a>
           <a
             className="z-10"
-            href="/cv/NaveenKishore_CV.pdf"
+            href="/cv/NaveenKishoreCV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download
