@@ -28,7 +28,7 @@ export const ContactSection = () => {
     setIsSending(true);
 
     try {
-      const res = await fetch('/api/send-email', {
+      const res = await fetch('https://portfolio-2ecf.onrender.com/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, description }),

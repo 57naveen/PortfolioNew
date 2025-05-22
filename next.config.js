@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+   images: {
+    unoptimized: true, 
+  },
+  
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")
     );
+
+   
 
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url
@@ -45,4 +52,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
