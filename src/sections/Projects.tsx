@@ -46,7 +46,7 @@ const portfolioProjects = [
       { title: "Implemented Netflix-style UI with dynamic hero banner and carousels" },
       { title: "Enhanced user engagement with AI-assisted movie recommendations" },
     ],
-    link: "https://netflixgpt-242ef.web.app/",
+    link: "https://netflix-gpt-lac-ten.vercel.app/",
     image: netflix, 
   },
 ];
