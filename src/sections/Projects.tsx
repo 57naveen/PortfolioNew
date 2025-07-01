@@ -22,8 +22,8 @@ const portfolioProjects = [
     { title: "Used microservices architecture with React.js frontend and Node.js/Express.js backend." },
     { title: "Implemented secure JWT authentication with HTTP-only cookies and session handling." },
     { title: "Applied data validation and password encryption for security." },
-    { title: "Designed modular APIs with Express Router for clean backend structure." },
-    { title: "Deployed backend on AWS EC2, frontend via NGINX, managed with PM2." }
+    // { title: "Designed modular APIs with Express Router for clean backend structure." },
+    // { title: "Deployed backend on AWS EC2, frontend via NGINX, managed with PM2." }
   ],
   link: "https://dev-tinder-web-iota-gules.vercel.app/",
   image: DevTinder
