@@ -10,8 +10,24 @@ import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import mansionleaf from "@/assets/images/mansionleaf.png";
 import netflix from "@/assets/images/Netflix.png";
+import DevTinder from "@/assets/images/DevTinder.png";
 
 const portfolioProjects = [ 
+  {
+  company: "DevTinder",
+  year: "2025",
+  title: "Developer Social Platform",
+  results: [
+    { title: "Built a social platform for developers to connect, collaborate, and network." },
+    { title: "Used microservices architecture with React.js frontend and Node.js/Express.js backend." },
+    { title: "Implemented secure JWT authentication with HTTP-only cookies and session handling." },
+    { title: "Applied data validation and password encryption for security." },
+    // { title: "Designed modular APIs with Express Router for clean backend structure." },
+    // { title: "Deployed backend on AWS EC2, frontend via NGINX, managed with PM2." }
+  ],
+  link: "https://dev-tinder-web-iota-gules.vercel.app/",
+  image: DevTinder
+},
   {
     company: "vision.Ai",
     year: "2025",
@@ -37,18 +53,19 @@ const portfolioProjects = [
     link: "https://mansionleafs.web.app/",
     image: mansionleaf,
   },
-  {
-    company: "Netflix",
-    year: "2025",
-    title: "Netflix + GPT Clone",
-    results: [
-      { title: "Integrated GPT-powered semantic search for smarter content discovery" },
-      { title: "Implemented Netflix-style UI with dynamic hero banner and carousels" },
-      { title: "Enhanced user engagement with AI-assisted movie recommendations" },
-    ],
-    link: "https://netflixgpt-242ef.web.app/",
-    image: netflix, 
-  },
+  // {
+  //   company: "Netflix",
+  //   year: "2025",
+  //   title: "Netflix + GPT Clone",
+  //   results: [
+  //     { title: "Integrated GPT-powered semantic search for smarter content discovery" },
+  //     { title: "Implemented Netflix-style UI with dynamic hero banner and carousels" },
+  //     { title: "Enhanced user engagement with AI-assisted movie recommendations" },
+  //   ],
+  //   link: "https://netflix-gpt-lac-ten.vercel.app/",
+  //   image: netflix, 
+  // },
+   
 ];
 
 export const ProjectsSection = () => {
